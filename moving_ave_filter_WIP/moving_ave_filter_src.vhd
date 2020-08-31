@@ -1,0 +1,124 @@
+--source code for moving average filter VHDL exercise
+--Henry Kou 1153814
+--06.24.20
+
+--Implementation Notes:
+--Circular 32 pt. Register based FIFO Buffer with flags, E,F.
+--Further additions: AE, AF flags, burst
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+--inputs and outputs
+entity fifo_buffer is
+	generic ( --scope??
+	g_WIDTH : natural := 8;
+	g_DEPTH : integer := 32
+	);
+	port(	
+	i_rst_sync : in std_logic;
+	i_clock		:in std_logic;
+	--write interface
+	i_wr_en		: in std_logic;
+	i_wr_data	: in std_logic_vector(g_WIDTH-1 downto 0); --little endian
+	o_full_flag	: out std_logic;
+
+	--read interface
+	i_rd_en		: in std_logic;
+	o_rd_data	: out std_logic_vector(g_WIDTH-1 downto 0); --little endian
+	o_empty_flag	: out std_logic
+	);
+end fifo_buffer;
+
+architecture rtl of fifo_buffer is
+--declarations
+type t_FIFO_DATA is array (0 to g_DEPTH-1) of std_logic_vector(g_WIDTH-1 downto 0); --declaring array data type.
+signal r_FIFO_DATA : t_FIFO_DATA := (others=> (others => '0')); --r_FIFO_DATA is the body of the FIFO buffer.
+--constants
+--constant c_WR_CLK_100Hz 	: natural := 250000;
+--constant c_RD_CLK_100Hz 	: natural := 250000;
+--define global clock?
+
+--Read/Write Pointers (indexers)
+signal r_rd_ptr	: integer range 0 to g_DEPTH-1 :=0; --range 0-31, init to 0
+signal r_wr_ptr	: integer range 0 to g_DEPTH-1 :=0; --range 0-31, init to 0 //variable?????
+
+--output flags
+signal w_FULL_FLAG		: std_logic; 		--initialized to zero....... for a wire???? maybe not.
+signal w_EMPTY_FLAG		: std_logic;
+
+signal r_DATA_CNT		: integer range -1 to g_DEPTH+1 := 0; --extra range to detect underflow/overflow of buffer
+
+begin --architecture
+
+--SEQUENTIAL LOGIC
+	--controls indexing of read and write pointers, reset condition, and detection of flag events
+	P_CONTROL : process(i_clock) is
+	begin
+		--reset (synchronous)
+		if rising_edge(i_clock) then
+			if i_rst_sync = '1' then
+				r_DATA_CNT <= 0;
+				r_rd_ptr <= 0;
+				r_wr_ptr <= 0;
+			else
+
+
+				if (i_wr_en = '1' and i_rd_en = '0') then
+					r_DATA_CNT <= r_DATA_CNT + 1;
+				elsif (i_wr_en = '0' and i_rd_en = '1') then
+					r_DATA_CNT <= r_DATA_CNT - 1;
+				end if;
+				--write pointer
+				--if rising_edge(i_clock) then --no rising edge clk here
+				if (i_wr_en = '1' and w_FULL_FLAG = '0') then
+					if r_wr_ptr = g_DEPTH-1 then
+						r_wr_ptr <= 0;
+					else
+						r_wr_ptr <= r_wr_ptr + 1;
+					end if;
+				end if;
+				--end if;
+		
+				--read pointer
+				--if rising_edge(i_clock) then
+				if (i_rd_en = '1' and w_EMPTY_FLAG = '0') then
+					if r_rd_ptr = g_DEPTH-1 then
+						r_rd_ptr <= 0;
+					else
+						r_rd_ptr <= r_rd_ptr + 1;
+					end if;
+				end if;
+				if i_wr_en = '1' then
+					r_FIFO_DATA(r_wr_ptr) <= i_wr_data;
+				end if;
+				--end if;
+			end if; -- sync reset
+		end if; --rising_edge(i_clock)
+	end process P_CONTROL;
+
+--COMBINATIONAL LOGIC
+o_rd_data <= r_FIFO_DATA(r_rd_ptr); --constantly spouting the value at the read pointer location.
+
+w_FULL_FLAG <= '1' when r_DATA_CNT = g_DEPTH else '0';
+w_EMPTY_FLAG <= '1' when r_DATA_CNT = 0 else '0';
+o_full_flag <= w_FULL_FLAG;
+o_empty_flag <= w_EMPTY_FLAG;
+
+	P_ASSERT : process(i_clock) is
+	begin
+		if rising_edge(i_clock) then
+			if (i_wr_en = '1' and w_FULL_FLAG = '1') then
+				report "Writing to buffer when full" severity failure;
+			end if;
+			
+			if (i_rd_en = '1' and w_EMPTY_FLAG = '1') then
+				report "Reading from empty buffer" severity failure;
+			end if;
+		end if;
+	end process P_ASSERT;
+
+
+	
+end rtl;

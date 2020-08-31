@@ -1,0 +1,409 @@
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 3 errors.
+# 5 compiles, 1 failed with 3 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 3 errors.
+# 5 compiles, 1 failed with 3 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 3 errors.
+# 5 compiles, 1 failed with 3 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 9 errors.
+# 5 compiles, 1 failed with 9 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 2 errors.
+# Compile of moving_ave_filter_2_tb.vhd failed with 2 errors.
+# 6 compiles, 2 failed with 4 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:17:52 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position end sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 123
+add wave -position end  sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_DATA_CNT
+# Break key hit
+restart -f
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 123
+quit -sim
+# End time: 16:21:21 on Jul 21,2020, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:22:37 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+quit -sim
+# End time: 16:23:11 on Jul 21,2020, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:23:37 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position end sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 123
+quit -sim
+# End time: 16:24:57 on Jul 21,2020, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd failed with 3 errors.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:28:30 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position end sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 123
+quit -sim
+# End time: 16:40:26 on Jul 21,2020, Elapsed time: 0:11:56
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:41:25 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+# ** Fatal: (vsim-3348) Port length (12) does not match actual length (8) for port "/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/o_sum".
+#    Time: 0 ps  Iteration: 0  Instance: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd Line: 33
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:41:26 on Jul 21,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:42:17 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+# ** Fatal: (vsim-3348) Port length (12) does not match actual length (8) for port "/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/o_sum".
+#    Time: 0 ps  Iteration: 0  Instance: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd Line: 33
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:42:18 on Jul 21,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 16:44:08 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position end sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 12 (11 downto 0). Right is 8 (7 downto 0).
+#    Time: 0 ps  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/line__108 File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Fatal error in Architecture rtl at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 108
+# 
+# HDL call sequence:
+# Stopped at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd 108 Architecture rtl
+# 
+quit -sim
+# End time: 16:47:39 on Jul 21,2020, Elapsed time: 0:03:31
+# Errors: 2, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:08:40 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position end sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 123
+quit -sim
+# End time: 17:14:13 on Jul 21,2020, Elapsed time: 0:05:33
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:22:48 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position insertpoint sim:/moving_ave_filter_2_tb/*
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_DATA_CNT
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_DATA
+restart -f
+run 1ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+quit -sim
+# End time: 17:34:36 on Jul 21,2020, Elapsed time: 0:11:48
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:35:17 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+# ** Fatal: (vsim-3734) Index value 4 is out of range 0 to 3.
+#    Time: 0 ps  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/line__108 File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:35:18 on Jul 21,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:36:47 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position insertpoint sim:/moving_ave_filter_2_tb/*
+run 1ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_DATA_CNT
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_DATA
+restart -f
+run 1ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+# Can't move the Now cursor.
+quit -sim
+# End time: 17:38:55 on Jul 21,2020, Elapsed time: 0:02:08
+# Errors: 1, Warnings: 0
+# Error attempted to pushdown all children on .main_pane.cs.312 mode is tabbed children are paneframes 1
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:47:00 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position insertpoint sim:/moving_ave_filter_2_tb/*
+run 1ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_DATA_CNT
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_DATA
+restart -f
+run 1ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+quit -sim
+# End time: 17:50:39 on Jul 21,2020, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 0
+# Compile of moving_ave_filter_tb.vhd was successful.
+# Compile of moving_ave_filter_src.vhd was successful.
+# Compile of fifo_src.vhd was successful.
+# Compile of fifo_tb.vhd was successful.
+# Compile of moving_ave_filter_2.vhd was successful.
+# Compile of moving_ave_filter_2_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=\"+acc\" work.moving_ave_filter_2_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" work.moving_ave_filter_2_tb 
+# Start time: 17:50:57 on Jul 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.moving_ave_filter_2_tb(behave)
+# Loading work.moving_ave_filter(rtl)
+add wave -position insertpoint sim:/moving_ave_filter_2_tb/*
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_DATA_CNT
+add wave -position insertpoint  \
+sim:/moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_DATA
+run 1 ms
+# ** Failure: Reading from empty buffer
+#    Time: 215 ns  Iteration: 0  Process: /moving_ave_filter_2_tb/MODULE_FIFO_REGS_NO_FLAGS_INST/P_ASSERT File: C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd
+# Break in Process P_ASSERT at C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd line 132
+# End time: 19:00:26 on Jul 21,2020, Elapsed time: 1:09:29
+# Errors: 0, Warnings: 0

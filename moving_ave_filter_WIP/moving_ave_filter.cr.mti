@@ -1,0 +1,66 @@
+C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_src.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_src.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fifo_buffer
+-- Compiling architecture rtl of fifo_buffer
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/fifo_src.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/fifo_src.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity module_fifo_regs_no_flags
+-- Compiling architecture rtl of module_fifo_regs_no_flags
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/test_io_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/test_io_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity example_file_io_tb
+-- Compiling architecture behave of example_file_io_tb
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\1153814\Desktop\Raytheon\training\ModelSim_Exercises\moving_ave_filter_WIP\moving_ave_filter_2.vhd}
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity moving_ave_filter
+-- Compiling architecture rtl of moving_ave_filter
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fifo_buffer_tb
+-- Compiling architecture behave of fifo_buffer_tb
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/fifo_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/fifo_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity module_fifo_regs_no_flags_tb
+-- Compiling architecture behave of module_fifo_regs_no_flags_tb
+
+} {} {}} C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/1153814/Desktop/Raytheon/training/ModelSim_Exercises/moving_ave_filter_WIP/moving_ave_filter_2_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity moving_ave_filter_2_tb
+-- Compiling architecture behave of moving_ave_filter_2_tb
+
+} {} {}}
